@@ -1,0 +1,15 @@
+<html>
+  <body>
+    <form method="POST" action="/">
+        <label>Count:</label> <input type="text" name="count">
+      <input type="submit" value="Submit">
+    </form>
+
+  <br>
+<h1>Pushups</h1>
+    {% for pushup in pushUps %}
+      <p><div>{{pushup.date}}</div><div>{{pushup.count}}</div></p>
+    {% endfor %}
+  </body>
+  </body>
+</html>
